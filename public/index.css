@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f6f7fb;
+    margin: 0;
+    padding: 24px;
+}
+
+.wrap {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px solid #e6e6e6;
+    margin-bottom: 12px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.filters a {
+    text-decoration: none;
+    color: #333;
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+.filters a.active {
+    border-color: #333;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background: #333;
+    color: white;
+    cursor: pointer;
+}
+
+button.secondary {
+    background: white;
+    color: #333;
+}
+
+button.danger {
+    border-color: #b00020;
+    background: #b00020;
+}
+
+.list .item {
+    background: white;
+    border: 1px solid #e6e6e6;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: center;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+.actions form {
+    margin: 0;
+}
+
+.error {
+    color: #b00020;
+    margin: 10px 0;
+}
+
+.muted {
+    color: #666;
+}
