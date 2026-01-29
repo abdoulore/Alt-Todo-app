@@ -25,7 +25,6 @@ app.use(morgan("combined"));
 
 app.set("trust proxy", 1);
 
-app.use(
   app.use(
   session({
     secret: process.env.SESSION_SECRET || "dev_secret",
