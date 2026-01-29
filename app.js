@@ -23,7 +23,10 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use(morgan("combined"));
 
+app.set("trust proxy", 1);
+
 app.use(
+  app.use(
   session({
     secret: process.env.SESSION_SECRET || "dev_secret",
     resave: false,
@@ -34,10 +37,11 @@ app.use(
     cookie: {
       httpOnly: true,
       sameSite: "lax",
-      secure: process.env.NODE_ENV === "production"
+      secure: true
     }
   })
 );
+
 
 app.use((req, res, next) => {
   res.locals.currentUserId = req.session.userId || null;
